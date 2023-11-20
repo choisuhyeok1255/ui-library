@@ -1,7 +1,8 @@
-import styled from "@emotion/styled";
+import { css } from "@emotion/react";
 
-export const Button = styled.button`
-  width: 100px;
-  height: 50px;
-  border: 1px solid pink;
+import { theme } from "../../../styles";
+import type { Variant } from "./Button";
+
+export const button = (variant: Variant) => css`
+  ${theme.button[variant]};
 `;
