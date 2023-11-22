@@ -17,6 +17,10 @@ const meta: Meta<typeof Button> = {
     disabled: {
       description: "버튼을 비활성화할지 여부를 설정합니다.",
     },
+    children: {
+      description:
+        "버튼 내부에 포함될 자식 요소입니다. 주로 텍스트 또는 다른 React 컴포넌트가 위치합니다.",
+    },
     variant: {
       description: "버튼의 스타일을 설정합니다.",
       options: [
